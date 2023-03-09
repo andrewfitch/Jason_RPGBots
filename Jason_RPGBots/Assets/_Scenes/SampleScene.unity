@@ -385,6 +385,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 113006202}
+  - component: {fileID: 113006204}
+  - component: {fileID: 113006203}
   m_Layer: 0
   m_Name: NPC Drone
   m_TagString: Untagged
@@ -408,6 +410,40 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &113006203
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 113006201}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 3
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &113006204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 113006201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 468e975b44b088544b975bf1976fb632, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _dialog: {fileID: 4900000, guid: 6cf48bb6d89824cc69e35b43f9a1aca6, type: 3}
 --- !u!43 &128622831
 Mesh:
   m_ObjectHideFlags: 0
@@ -1064,7 +1100,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: First response
+  m_text: ... and I could contain myself no longer.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 05c7cf3cd2a24ae4b9dc53ec4f30b907, type: 2}
   m_sharedMaterial: {fileID: -8189402689064601691, guid: 05c7cf3cd2a24ae4b9dc53ec4f30b907, type: 2}
@@ -1199,7 +1235,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: First response
+  m_text: ... but I said nothing
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 05c7cf3cd2a24ae4b9dc53ec4f30b907, type: 2}
   m_sharedMaterial: {fileID: -8189402689064601691, guid: 05c7cf3cd2a24ae4b9dc53ec4f30b907, type: 2}
@@ -1464,7 +1500,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &798640751
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4976,7 +5012,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1134852900
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5175,7 +5211,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1240230037
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5683,8 +5719,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Hello, I'm a dialog giving npc that does tutorial like stuff, would you
-    like to chat with me?
+  m_text: 'Test
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 05c7cf3cd2a24ae4b9dc53ec4f30b907, type: 2}
   m_sharedMaterial: {fileID: -8189402689064601691, guid: 05c7cf3cd2a24ae4b9dc53ec4f30b907, type: 2}
@@ -5711,7 +5748,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 43.4
+  m_fontSize: 72
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -6051,7 +6088,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2063304039
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6336,7 +6373,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d73c7e956f8fe944a06357b669f8fb7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _dialog: {fileID: 4900000, guid: 6cf48bb6d89824cc69e35b43f9a1aca6, type: 3}
   _storyText: {fileID: 1838597540}
   _choiceButtons:
   - {fileID: 1240230038}
