@@ -502,6 +502,8 @@ MonoBehaviour:
     icon: VideoPlayer Icon
     color: {r: 0.5764706, g: 0.43921572, b: 0.8588236, a: 1}
   _sceneHistory:
+  - name: SampleScene
+    path: Assets/_Scenes/SampleScene.unity
   - name: Basic Demo
     path: Assets/Ink/Demos/Basic Demo/Basic Demo.unity
   _notes: []
